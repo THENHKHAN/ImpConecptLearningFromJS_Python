@@ -76,3 +76,26 @@ function sum(...args) {  // argd = [1,2,3]
  
  sum(1, 2, 3); // 6
 
+console.log(" ***************** Destructring with FUNCTION *****************");
+ const calc = (a,b  ) =>{
+
+    return [
+        a+b,
+        a-b,
+        a*b,
+        a/b
+    ]
+ }
+
+ const [summ , dif , prod , div] = calc(2,5)
+console.log(`SUM : ${summ}`);
+console.log(`dif : ${dif}`);
+console.log(`prod : ${prod}`);
+console.log(`div : ${div}`);
+//  OUTPUT
+/**
+SUM : 7
+dif : -3
+prod : 10
+div : 0.4
+ */
